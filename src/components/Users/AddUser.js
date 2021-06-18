@@ -4,7 +4,7 @@ import Card from '../UI/Card';
 
 import classes from './AddUser.module.css';
 
-const AddUser = () => {
+const AddUser = ({ onSuccess }) => {
   const [enteredUsername, setEnteredUsername] = useState('');
   const [enteredAge, setEnteredAge] = useState('');
 
@@ -20,7 +20,7 @@ const AddUser = () => {
   const addUserHandler = (event) => {
     event.preventDefault();
     if (isValidInput(enteredUsername, enteredAge)) {
-      console.log(enteredUsername, enteredAge);
+      onSuccess(enteredUsername, enteredAge);
       setEnteredUsername('');
       setEnteredAge('');
     }
