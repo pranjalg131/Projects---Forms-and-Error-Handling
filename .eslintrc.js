@@ -18,5 +18,7 @@ module.exports = {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'jsx-a11y/label-has-associated-control': [0],
     eqeqeq: [1],
+    'func-names': ['error', 'as-needed'],
+    'react/button-has-type': [0],
   },
 };
