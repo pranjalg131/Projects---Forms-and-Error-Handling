@@ -11,10 +11,10 @@ function App() {
   };
 
   return (
-    <div>
+    <>
       <AddUser onSuccess={addUser} />
       <UsersList users={users} />
-    </div>
+    </>
   );
 }
 

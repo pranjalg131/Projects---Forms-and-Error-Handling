@@ -53,7 +53,7 @@ const AddUser = ({ onSuccess }) => {
   };
 
   return (
-    <div>
+    <>
       {errorState && (
         <ErrorModal
           title={errorState.title}
@@ -82,7 +82,7 @@ const AddUser = ({ onSuccess }) => {
           <Button type="submit">Add User</Button>
         </form>
       </Card>
-    </div>
+    </>
   );
 };
 
